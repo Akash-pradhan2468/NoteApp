@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.note{
+  background-color: yellow;
+  display: flex;
+  min-height: 170px;
+  padding: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  white-space: pre-wrap;
+
+}
+.note-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notesList{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.App{
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.note.new{
+  background-color: aquamarine;
+}
+textarea{
+  border: none;
+  background-color: aquamarine;
+}
+textarea:focus{
+  outline: none;
+}
+.search{
+  background-color: rgb(234, 231, 231);
+  padding: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+}
+.search input{
+  background-color: rgb(234, 231, 231);
+  border: none;
+  width: 100%;
+  height: 30px;
+
+}
+input:focus{
+  outline: none;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+
+}
+.dark-mode h1{
+  color: white;
+}
+.btn{
+  border-radius: 10px;
+  background-color: rgb(229, 173, 120);
+  border: none;
+  padding: 10px;
+  font-weight: bolder;
+}
